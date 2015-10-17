@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		F40FBF441BD26DFA009457E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF431BD26DFA009457E4 /* AppDelegate.swift */; };
-		F40FBF461BD26DFA009457E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF451BD26DFA009457E4 /* ViewController.swift */; };
+		F40FBF461BD26DFA009457E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF451BD26DFA009457E4 /* MainViewController.swift */; };
 		F40FBF491BD26DFA009457E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FBF471BD26DFA009457E4 /* Main.storyboard */; };
 		F40FBF4C1BD26DFA009457E4 /* Money.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF4A1BD26DFA009457E4 /* Money.xcdatamodeld */; };
 		F40FBF4E1BD26DFA009457E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40FBF4D1BD26DFA009457E4 /* Assets.xcassets */; };
 		F40FBF511BD26DFA009457E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40FBF4F1BD26DFA009457E4 /* LaunchScreen.storyboard */; };
+		F40FBF5B1BD27216009457E4 /* PropertyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF5A1BD27216009457E4 /* PropertyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F40FBF5E1BD279A3009457E4 /* BillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF5D1BD279A3009457E4 /* BillTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F40FBF611BD27A63009457E4 /* StatisticsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF601BD27A63009457E4 /* StatisticsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F40FBF641BD27AEF009457E4 /* MeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40FBF631BD27AEF009457E4 /* MeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F40FBF401BD26DFA009457E4 /* Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Money.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40FBF431BD26DFA009457E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F40FBF451BD26DFA009457E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F40FBF451BD26DFA009457E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F40FBF481BD26DFA009457E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F40FBF4B1BD26DFA009457E4 /* Money.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Money.xcdatamodel; sourceTree = "<group>"; };
 		F40FBF4D1BD26DFA009457E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F40FBF501BD26DFA009457E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40FBF521BD26DFA009457E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40FBF5A1BD27216009457E4 /* PropertyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewController.swift; sourceTree = "<group>"; };
+		F40FBF5D1BD279A3009457E4 /* BillTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillTableViewController.swift; sourceTree = "<group>"; };
+		F40FBF601BD27A63009457E4 /* StatisticsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewController.swift; sourceTree = "<group>"; };
+		F40FBF631BD27AEF009457E4 /* MeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		F40FBF421BD26DFA009457E4 /* Money */ = {
 			isa = PBXGroup;
 			children = (
-				F40FBF431BD26DFA009457E4 /* AppDelegate.swift */,
-				F40FBF451BD26DFA009457E4 /* ViewController.swift */,
-				F40FBF471BD26DFA009457E4 /* Main.storyboard */,
+				F40FBF581BD2714A009457E4 /* App */,
+				F40FBF591BD27160009457E4 /* Property */,
+				F40FBF5C1BD27991009457E4 /* Bill */,
+				F40FBF5F1BD27A4A009457E4 /* Statistics */,
+				F40FBF621BD27ADC009457E4 /* Me */,
 				F40FBF4D1BD26DFA009457E4 /* Assets.xcassets */,
 				F40FBF4F1BD26DFA009457E4 /* LaunchScreen.storyboard */,
 				F40FBF521BD26DFA009457E4 /* Info.plist */,
 				F40FBF4A1BD26DFA009457E4 /* Money.xcdatamodeld */,
 			);
 			path = Money;
+			sourceTree = "<group>";
+		};
+		F40FBF581BD2714A009457E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F40FBF431BD26DFA009457E4 /* AppDelegate.swift */,
+				F40FBF451BD26DFA009457E4 /* MainViewController.swift */,
+				F40FBF471BD26DFA009457E4 /* Main.storyboard */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F40FBF591BD27160009457E4 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				F40FBF5A1BD27216009457E4 /* PropertyTableViewController.swift */,
+			);
+			name = Property;
+			sourceTree = "<group>";
+		};
+		F40FBF5C1BD27991009457E4 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				F40FBF5D1BD279A3009457E4 /* BillTableViewController.swift */,
+			);
+			name = Bill;
+			sourceTree = "<group>";
+		};
+		F40FBF5F1BD27A4A009457E4 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				F40FBF601BD27A63009457E4 /* StatisticsTableViewController.swift */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		F40FBF621BD27ADC009457E4 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				F40FBF631BD27AEF009457E4 /* MeTableViewController.swift */,
+			);
+			name = Me;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40FBF461BD26DFA009457E4 /* ViewController.swift in Sources */,
+				F40FBF5B1BD27216009457E4 /* PropertyTableViewController.swift in Sources */,
+				F40FBF461BD26DFA009457E4 /* MainViewController.swift in Sources */,
+				F40FBF641BD27AEF009457E4 /* MeTableViewController.swift in Sources */,
+				F40FBF611BD27A63009457E4 /* StatisticsTableViewController.swift in Sources */,
 				F40FBF4C1BD26DFA009457E4 /* Money.xcdatamodeld in Sources */,
+				F40FBF5E1BD279A3009457E4 /* BillTableViewController.swift in Sources */,
 				F40FBF441BD26DFA009457E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
